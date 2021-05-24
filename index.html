@@ -1,639 +1,803 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Portfolio | Paramjeet Dhiman</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<title>Portfolio | Paramjeet Dhiman</title>
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<!--CSS-->
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-</head>
+  <body id="body" data-ng-app="contactApp">
+    <!--Preloader-->
+    <div class="preloader-it">
+      <div
+        class="mdl-spinner mdl-js-spinner is-active is-upgraded"
+        data-upgraded="MaterialSpinner"
+      >
+        <div class="mdl-spinner__layer mdl-spinner__layer-1">
+          <div class="mdl-spinner__circle-clipper mdl-spinner__left">
+            <div class="mdl-spinner__circle"></div>
+          </div>
+          <div class="mdl-spinner__gap-patch">
+            <div class="mdl-spinner__circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Preloader-->
 
-<body id="body" data-ng-app="contactApp">
+    <!--Main Wrapper-->
+    <div class="main-wrapper">
+      <!--Bg Image-->
+      <div class="bg-struct bg-img"></div>
 
-	<!--Preloader-->
-	<div class="preloader-it">
-		<div class="mdl-spinner mdl-js-spinner is-active is-upgraded" data-upgraded="MaterialSpinner">
-			<div class="mdl-spinner__layer mdl-spinner__layer-1">
-				<div class="mdl-spinner__circle-clipper mdl-spinner__left">
-					<div class="mdl-spinner__circle"></div>
-				</div>
-				<div class="mdl-spinner__gap-patch">
-					<div class="mdl-spinner__circle"></div>
-				</div>
-			</div>
-		
-		</div>
-	</div>
-	<!--/Preloader-->
+      <!--/Bg Image-->
 
-	<!--Main Wrapper-->
-	<div class="main-wrapper">
+      <div class="mdl-js-layout mdl-layout--fixed-header">
+        <!--Top Header-->
+        <header class="mdl-layout__header full-width-header">
+          <div class="mdl-layout__header-row mdl-scroll-spy-1">
+            <!-- Title -->
+            <a href="index.html"
+              ><span class="mdl-layout-title">Portfolio</span></a
+            >
+            <div class="mdl-layout-spacer"></div>
+            <ul class="nav mdl-navigation mdl-layout--large-screen-only">
+              <li>
+                <a class="mdl-navigation__link" data-scroll href="#body"
+                  >about</a
+                >
+              </li>
+              <li>
+                <a class="mdl-navigation__link" data-scroll href="#skills_sec"
+                  >skills</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mdl-navigation__link"
+                  data-scroll
+                  href="#experience_sec"
+                  >experience</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mdl-navigation__link"
+                  data-scroll
+                  href="#education_sec"
+                  >education</a
+                >
+              </li>
+              <li>
+                <a class="mdl-navigation__link" data-scroll href="#contact_sec"
+                  >contact</a
+                >
+              </li>
+            </ul>
+            <!-- Right aligned menu below button -->
+            <button
+              id="demo-menu-lower-right"
+              class="mdl-button mdl-js-button mdl-button--icon ver-more-btn"
+            >
+              <i class="material-icons">more_vert</i>
+            </button>
 
-		<!--Bg Image-->
-		<div class="bg-struct bg-img"></div>
+            <span class="ml-4">
+              <label
+                class="mdl-switch mdl-js-switch mdl-js-ripple-effect pr-3"
+                data-mdl-for="switch-2"
+              >
+                <input
+                  type="checkbox"
+                  id="switch-2"
+                  class="mdl-switch__input"
+                />
+                <span class="mdl-switch__label"></span>
+              </label>
+            </span>
 
-		<!--/Bg Image-->
+            <ul
+              class="
+                mdl-menu mdl-menu--bottom-right
+                mdl-js-menu mdl-js-ripple-effect
+              "
+              data-mdl-for="demo-menu-lower-right"
+            >
+              <li class="mdl-menu__item">
+                <a
+                  href="https://drive.google.com/file/d/1LJqX5tDAwXZnlRNilIKql445k9qAo5k1/view?usp=sharing"
+                  target="_blank"
+                  ><i class="zmdi zmdi-download font-red pr-10"></i>Download
+                  CV</a
+                >
+              </li>
+              <li class="mdl-menu__item">
+                <a href="#contact_sec"
+                  ><i class="zmdi zmdi-email-open font-green pr-10"></i>Contact
+                  Me</a
+                >
+              </li>
+              <li class="mdl-menu__item">
+                <a href="callto:+917027006363"
+                  ><i class="zmdi zmdi-phone font-blue pr-10"></i>+91 702 700
+                  6363</a
+                >
+              </li>
+            </ul>
+          </div>
+        </header>
+        <!--/Top Header-->
 
-		<div class="mdl-js-layout mdl-layout--fixed-header">
+        <!--Left Sidebar-->
+        <div class="mdl-layout__drawer">
+          <div class="nicescroll-bar">
+            <div class="drawer-profile-wrap">
+              <div class="candidate-img-drawer mt-25 mb-20"></div>
+              <span class="candidate-name block mb-10 text-center"
+                >Paramjeet Dhiman</span
+              >
+              <ul class="social-icons mb-30">
+                <li>
+                  <a
+                    class="facebook-link"
+                    target="_blank"
+                    href="https://facebook.com/paramjeetdhiman1997"
+                  >
+                    <i id="tt11" class="zmdi zmdi-facebook"></i>
+                    <div class="mdl-tooltip" data-mdl-for="tt11">facebook</div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="twitter-link"
+                    target="_blank"
+                    href="https://twitter.com/paramdhiman_"
+                  >
+                    <i id="tt12" class="zmdi zmdi-twitter"></i>
+                    <div class="mdl-tooltip" data-mdl-for="tt12">twitter</div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="linkedin-link"
+                    target="_blank"
+                    href="https://linkedin.com/in/paramjeetdhiman"
+                  >
+                    <i id="tt13" class="zmdi zmdi-linkedin"></i>
+                    <div class="mdl-tooltip" data-mdl-for="tt13">linkedin</div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dribbble-link"
+                    target="_blank"
+                    href="https://github.com/paramjeetdhiman"
+                  >
+                    <i id="tt14" class="zmdi zmdi-github"></i>
+                    <div class="mdl-tooltip" data-mdl-for="tt14">github</div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="instagram-link"
+                    target="_blank"
+                    href="https://www.instagram.com/paramjeetdhiman_/"
+                  >
+                    <i id="tt15" class="zmdi zmdi-instagram"></i>
+                    <div class="mdl-tooltip" data-mdl-for="tt15">instagram</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mdl-scroll-spy-2">
+              <ul class="mdl-navigation">
+                <li>
+                  <a
+                    class="mdl-navigation__link border-top-sep"
+                    data-scroll
+                    href="#body"
+                  >
+                    <i class="zmdi zmdi-border-color pr-15"></i>
+                    <span class="font-capitalize">about</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="mdl-navigation__link border-top-sep"
+                    data-scroll
+                    href="#skills_sec"
+                  >
+                    <i class="zmdi zmdi-cutlery pr-15"></i>
+                    <span class="font-capitalize">skills</span>
+                  </a>
+                </li>
 
-			<!--Top Header-->
-			<header class="mdl-layout__header" >
-				<div class="mdl-layout__header-row mdl-scroll-spy-1">
-					<!-- Title -->
-					<a href="index.html"><span class="mdl-layout-title">Portfolio</span></a>
-					<div class="mdl-layout-spacer"></div>
-					<ul class="nav mdl-navigation mdl-layout--large-screen-only">
-						<li><a class="mdl-navigation__link" data-scroll href="#body">about</a></li>
-						<li><a class="mdl-navigation__link" data-scroll href="#skills_sec">skills</a></li>
-						<li><a class="mdl-navigation__link" data-scroll href="#experience_sec">experience</a></li>
-						<li><a class="mdl-navigation__link" data-scroll href="#education_sec">education</a></li>
-						<li><a class="mdl-navigation__link" data-scroll href="#contact_sec">contact</a></li>
-					</ul>
-					<!-- Right aligned menu below button -->
-					<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon ver-more-btn">
-						<i class="material-icons">more_vert</i>
-					</button>
+                <li>
+                  <a
+                    class="mdl-navigation__link border-top-sep"
+                    data-scroll
+                    href="#experience_sec"
+                  >
+                    <i class="zmdi zmdi-shield-check pr-15"></i>
+                    <span class="font-capitalize">experience</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="mdl-navigation__link border-top-sep"
+                    data-scroll
+                    href="#education_sec"
+                  >
+                    <i class="zmdi zmdi-library pr-15"></i>
+                    <span class="font-capitalize">education</span>
+                  </a>
+                </li>
 
-					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-						data-mdl-for="demo-menu-lower-right">
-						<li class="mdl-menu__item"><a href="https://www.dropbox.com/s/g63m6lrnnqfnmij/myResume.pdf?dl=0"
-								target="_blank"><i class="zmdi zmdi-download font-red pr-10"></i>Download CV</a></li>
-						<li class="mdl-menu__item"><a href="#contact_sec"><i
-									class="zmdi zmdi-email-open font-green pr-10"></i>Contact Me</a></li>
-						<li class="mdl-menu__item"><a href="callto:+917027006363"><i
-									class="zmdi zmdi-phone  font-blue  pr-10"></i>+91 702 700 6363</a></li>
-					</ul>
-				</div>
-			</header>
-			<!--/Top Header-->
+                <li>
+                  <a
+                    class="
+                      mdl-navigation__link
+                      border-top-sep border-bottom-sep
+                    "
+                    data-scroll
+                    href="#contact_sec"
+                  >
+                    <i class="zmdi zmdi-email pr-15"></i>
+                    <span class="font-capitalize">contact</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="drawer-footer mt-50 mb-30 text-center">
+              <p class="font-12 mt-10">
+                All right reserved Paramjeet Dhiman &copy; 2021.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/Left Sidebar-->
 
-			<!--Left Sidebar-->
-			<div class="mdl-layout__drawer">
-				<div class="nicescroll-bar">
-					<div class="drawer-profile-wrap">
-						<div class="candidate-img-drawer mt-25 mb-20"></div>
-						<span class="candidate-name block mb-10 text-center">Paramjeet Dhiman</span>
-						<ul class="social-icons  mb-30">
-							<li>
-								<a class="facebook-link" target="_blank"
-									href="https://facebook.com/paramjeetdhiman1997">
-									<i id="tt11" class="zmdi zmdi-facebook"></i>
-									<div class="mdl-tooltip" data-mdl-for="tt11">
-										facebook
-									</div>
-								</a>
-							</li>
-							<li>
-								<a class="twitter-link" target="_blank" href="https://twitter.com/paramdhiman_">
-									<i id="tt12" class="zmdi zmdi-twitter"></i>
-									<div class="mdl-tooltip" data-mdl-for="tt12">
-										twitter
-									</div>
-								</a>
-							</li>
-							<li>
-								<a class="linkedin-link" target="_blank" href="https://linkedin.com/in/paramjeetdhiman">
-									<i id="tt13" class="zmdi zmdi-linkedin"></i>
-									<div class="mdl-tooltip" data-mdl-for="tt13">
-										linkedin
-									</div>
-								</a>
-							</li>
-							<li>
-								<a class="dribbble-link" target="_blank" href="https://github.com/paramjeetdhiman">
-									<i id="tt14" class="zmdi zmdi-github"></i>
-									<div class="mdl-tooltip" data-mdl-for="tt14">
-										github
-									</div>
-								</a>
-							</li>
-							<li>
-								<a class="instagram-link" target="_blank"
-									href="https://www.instagram.com/paramjeetdhiman_/">
-									<i id="tt15" class="zmdi zmdi-instagram"></i>
-									<div class="mdl-tooltip" data-mdl-for="tt15">
-										instagram
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="mdl-scroll-spy-2">
-						<ul class="mdl-navigation">
-							<li>
-								<a class="mdl-navigation__link border-top-sep" data-scroll href="#body">
-									<i class="zmdi zmdi-border-color pr-15"></i>
-									<span class="font-capitalize">about</span>
-								</a>
-							</li>
-							<li>
-								<a class="mdl-navigation__link border-top-sep" data-scroll href="#skills_sec">
-									<i class="zmdi zmdi-cutlery pr-15"></i>
-									<span class="font-capitalize">skills</span>
-								</a>
-							</li>
+        <!--Main Content-->
+        <div class="main-content relative">
+          <div class="container">
+            <!--About Sec-->
+            <section class="about-sec mt-180 mt-sm-120 mb-30">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="mdl-card mdl-shadow--2dp">
+                    <div class="row">
+                      <div class="col-md-5 col-xs-12 mb-30">
+                        <div class="candidate-img mb-35"></div>
+                        <ul class="social-icons">
+                          <li>
+                            <a
+                              class="facebook-link"
+                              target="_blank"
+                              href="https://facebook.com/paramjeetdhiman1997"
+                            >
+                              <i id="tt1" class="zmdi zmdi-facebook"></i>
+                              <div class="mdl-tooltip" data-mdl-for="tt1">
+                                facebook
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="twitter-link"
+                              target="_blank"
+                              href="https://twitter.com/paramdhiman_"
+                            >
+                              <i id="tt2" class="zmdi zmdi-twitter"></i>
+                              <div class="mdl-tooltip" data-mdl-for="tt2">
+                                twitter
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="linkedin-link"
+                              target="_blank"
+                              href="https://linkedin.com/in/paramjeetdhiman"
+                            >
+                              <i id="tt3" class="zmdi zmdi-linkedin"></i>
+                              <div class="mdl-tooltip" data-mdl-for="tt3">
+                                linkedin
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="dribbble-link"
+                              target="_blank"
+                              href="https://github.com/paramjeetdhiman"
+                            >
+                              <i id="tt4" class="zmdi zmdi-github"></i>
+                              <div class="mdl-tooltip" data-mdl-for="tt4">
+                                github
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="instagram-link"
+                              target="_blank"
+                              href="https://www.instagram.com/paramjeetdhiman_/"
+                            >
+                              <i id="tt5" class="zmdi zmdi-instagram"></i>
+                              <div class="mdl-tooltip" data-mdl-for="tt5">
+                                instagram
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-7 col-xs-12">
+                        <div class="info-wrap">
+                          <h1>Paramjeet Dhiman</h1>
+                          <h5 class="mt-20 font-black">Frontend Developer</h5>
+                          <div class="mt-30">
+                            <a
+                              id="download_cv"
+                              class="
+                                mdl-button mdl-js-button
+                                mdl-button--raised
+                                mdl-js-ripple-effect
+                                bg-green
+                                font-white
+                                mr-10
+                              "
+                              href="https://drive.google.com/file/d/1LJqX5tDAwXZnlRNilIKql445k9qAo5k1/view?usp=sharing"
+                              target="_blank"
+                              >download cv</a
+                            >
+                            <a
+                              class="
+                                mdl-button mdl-js-button
+                                mdl-button--raised
+                                mdl-js-ripple-effect
+                                bg-blue
+                                font-white
+                              "
+                              href="#contact_sec"
+                              data-scroll
+                              >contact</a
+                            >
+                          </div>
+                        </div>
+                        <ul class="profile-wrap mt-50">
+                          <li>
+                            <div class="profile-title">date of birth</div>
+                            <div class="profile-desc">19-12-1997</div>
+                          </li>
 
-							<li>
-								<a class="mdl-navigation__link border-top-sep" data-scroll href="#experience_sec">
-									<i class="zmdi zmdi-shield-check pr-15"></i>
-									<span class="font-capitalize">experience</span>
-								</a>
-							</li>
-							<li>
-								<a class="mdl-navigation__link border-top-sep" data-scroll href="#education_sec">
-									<i class="zmdi zmdi-library pr-15"></i>
-									<span class="font-capitalize">education</span>
-								</a>
-							</li>
+                          <li>
+                            <div class="profile-title">email</div>
+                            <div class="profile-desc">
+                              paramjeetdhiman1997@gmail.com
+                            </div>
+                          </li>
 
+                          <li>
+                            <div class="profile-title">phone</div>
+                            <div class="profile-desc">+91 702-700-6363</div>
+                          </li>
+                          <li>
+                            <div class="profile-title">address</div>
+                            <div class="profile-desc">Jind, Haryana, India</div>
+                          </li>
+                          <li>
+                            <div class="profile-title">freelance</div>
+                            <div class="profile-desc relative">
+                              Available
+                              <i
+                                id="datepickopn"
+                                class="zmdi zmdi-calendar-check font-green pl-5"
+                              ></i>
+                              <div id="datepicker1" class="datepicker"></div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--/About Sec-->
 
-							<li>
-								<a class="mdl-navigation__link border-top-sep border-bottom-sep" data-scroll
-									href="#contact_sec">
-									<i class="zmdi zmdi-email pr-15"></i>
-									<span class="font-capitalize">contact</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="drawer-footer mt-50 mb-30 text-center">
-						<p class="font-12 mt-10">All right reserved Paramjeet Dhiman &copy; 2019.</p>
-					</div>
-				</div>
-			</div>
-			<!--/Left Sidebar-->
+            <!--Skills Sec-->
+            <section id="skills_sec" class="skills-sec sec-pad-top-sm">
+              <div class="row">
+                <h2 class="mb-30 text-center">Technical Skills</h2>
+                <div class="col-sm-6 mb-30">
+                  <!--<h2 class="mb-30 text-center">technical skills</h2>-->
+                  <div class="mdl-card mdl-shadow--2dp">
+                    <div class="mb-30">
+                      <span class="progress-cat">Frontend Development</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap orange-bar">
+                            <span data-width="70"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">HTML5</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap blue-bar">
+                            <span data-width="100"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">CSS3</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap green-bar">
+                            <span data-width="100"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">JavaScript</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap yellow-bar">
+                            <span data-width="90"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">jQuery</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap sky-bar">
+                            <span data-width="90"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">bootstrap</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap orange-bar">
+                            <span data-width="100"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 mb-30">
+                  <!--<h2 class="mb-30">soft skills</h2>-->
+                  <div class="mdl-card mdl-shadow--2dp">
+                    <div class="mb-30">
+                      <span class="progress-cat">Backend Development</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap orange-bar">
+                            <span data-width="50"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">React</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap blue-bar">
+                            <span data-width="70"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">Tailwind</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap green-bar">
+                            <span data-width="80"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">Node.js</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap yellow-bar">
+                            <span data-width="50"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">Express</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap sky-bar">
+                            <span data-width="40"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">MongoDb</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap orange-bar">
+                            <span data-width="60"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <h2 class="mb-30 text-center">Personal Skills</h2>
+                <div class="col-sm-6 mb-30">
+                  <!--<h2 class="mb-30 text-center">technical skills</h2>-->
+                  <div class="mdl-card mdl-shadow--2dp">
+                    <div class="mb-30">
+                      <span class="progress-cat">CREATIVE</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap blue-bar">
+                            <span data-width="90"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">HARD WORKER</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap red-bar">
+                            <span data-width="100"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">LEADERDHIP</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap sky-bar">
+                            <span data-width="90"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-			<!--Setting-->
-			<div class="mdl-layout__drawer-right settings-drawer">
-				<div class="nicescroll-bar">
-					<span class="mdl-layout-title bg-blue font-white">
-						<span>options</span>
-					</span>
-					<div class="layout-switcher-wrap overflow-hide border-bottom-sep">
-						<ul>
+                <div class="col-sm-6 mb-30">
+                  <!--<h2 class="mb-30">soft skills</h2>-->
+                  <div class="mdl-card mdl-shadow--2dp">
+                    <div class="mb-30">
+                      <span class="progress-cat">TEAM PLAYER</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap blue-bar">
+                            <span data-width="100"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat"> TIME MANAGEMENT</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap red-bar">
+                            <span data-width="100"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-30">
+                      <span class="progress-cat">MOTIVATED</span>
+                      <div class="progress-bar-graph">
+                        <div class="progress-bar-wrap">
+                          <div class="bar-wrap sky-bar">
+                            <span data-width="100"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--/Skills Sec-->
 
-							<li>
-								<span class="layout-title">dark mode</span>
-								<span class="layout-switcher">
-									<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect"
-										data-mdl-for="switch-2">
-										<input type="checkbox" id="switch-2" class="mdl-switch__input">
-										<span class="mdl-switch__label"></span>
-									</label>
-								</span>
-							</li>
-							<li>
-								<span class="layout-title">header full width</span>
-								<span class="layout-switcher">
-									<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect"
-										data-mdl-for="switch-3">
-										<input type="checkbox" id="switch-3" class="mdl-switch__input">
-										<span class="mdl-switch__label"></span>
-									</label>
-								</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<!--/Setting-->
+            <!--Profile Sec-->
+            <section id="profile_sec" class="profile-sec sec-pad-top-sm">
+              <h2 class="mb-30 text-center">what i do</h2>
+              <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+                  <div class="mdl-card mdl-shadow--2dp">
+                    <i
+                      class="zmdi zmdi-format-color-fill font-blue profile-icon"
+                    ></i>
+                    <h4 class="mb-15">Cloud Engineer</h4>
+                    <p>
+                      A mobile first responsive template with material design.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+                  <div class="mdl-card mdl-shadow--2dp">
+                    <i class="zmdi zmdi-code font-green profile-icon"></i>
+                    <h4 class="mb-15">Frontend Developer</h4>
+                    <p>
+                      Comes with light and dark options. Suitable for the
+                      universe.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+                  <div class="mdl-card mdl-shadow--2dp">
+                    <i class="zmdi zmdi-code font-yellow profile-icon"></i>
+                    <h4 class="mb-15">Backend Developer</h4>
+                    <p>
+                      Extra ordinary setting pannel with lots of awesome
+                      features.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+                  <div class="mdl-card mdl-shadow--2dp">
+                    <i class="zmdi zmdi-grain font-red profile-icon"></i>
+                    <h4 class="mb-15">UI / UX DESIGN</h4>
+                    <p>Easy customizable framework using bootstrap sass.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--/Profile Sec-->
 
-			<!--Main Content-->
-			<div class="main-content relative">
-				<div class="container">
+            <!--Interest Sec-->
+            <section id="interest_sec" class="interest-sec sec-pad-top-sm">
+              <h2 class="mb-30">interests</h2>
+              <div class="row">
+                <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                  <div
+                    class="
+                      mdl-card
+                      mdl-shadow--2dp
+                      text-center
+                      pa-20
+                      pt-30
+                      pb-30
+                    "
+                  >
+                    <i class="zmdi zmdi-radio"></i>
+                    <span>music</span>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                  <div
+                    class="
+                      mdl-card
+                      mdl-shadow--2dp
+                      text-center
+                      pa-20
+                      pt-30
+                      pb-30
+                    "
+                  >
+                    <i class="zmdi zmdi-search"></i>
+                    <span>internet</span>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                  <div
+                    class="
+                      mdl-card
+                      mdl-shadow--2dp
+                      text-center
+                      pa-20
+                      pt-30
+                      pb-30
+                    "
+                  >
+                    <i class="zmdi zmdi-movie"></i>
+                    <span>movies</span>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                  <div
+                    class="
+                      mdl-card
+                      mdl-shadow--2dp
+                      text-center
+                      pa-20
+                      pt-30
+                      pb-30
+                    "
+                  >
+                    <i class="zmdi zmdi-library"></i>
+                    <span>reading</span>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                  <div
+                    class="
+                      mdl-card
+                      mdl-shadow--2dp
+                      text-center
+                      pa-20
+                      pt-30
+                      pb-30
+                    "
+                  >
+                    <i class="zmdi zmdi-airplane"></i>
+                    <span>traveling</span>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                  <div
+                    class="
+                      mdl-card
+                      mdl-shadow--2dp
+                      text-center
+                      pa-20
+                      pt-30
+                      pb-30
+                    "
+                  >
+                    <i class="zmdi zmdi-code"></i>
+                    <span>Coding</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--/Interest Sec-->
 
-					<!--About Sec-->
-					<section class="about-sec mt-180 mt-sm-120  mb-30">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="mdl-card mdl-shadow--2dp">
-									<div class="row">
-										<div class="col-md-5 col-xs-12 mb-30">
-											<div class="candidate-img mb-35"></div>
-											<ul class="social-icons">
-												<li>
-													<a class="facebook-link" target="_blank"
-														href="https://facebook.com/paramjeetdhiman1997">
-														<i id="tt1" class="zmdi zmdi-facebook"></i>
-														<div class="mdl-tooltip" data-mdl-for="tt1">
-															facebook
-														</div>
-													</a>
-												</li>
-												<li>
-													<a class="twitter-link" target="_blank"
-														href="https://twitter.com/paramdhiman_">
-														<i id="tt2" class="zmdi zmdi-twitter"></i>
-														<div class="mdl-tooltip" data-mdl-for="tt2">
-															twitter
-														</div>
-													</a>
-												</li>
-												<li>
-													<a class="linkedin-link" target="_blank"
-														href="https://linkedin.com/in/paramjeetdhiman">
-														<i id="tt3" class="zmdi zmdi-linkedin"></i>
-														<div class="mdl-tooltip" data-mdl-for="tt3">
-															linkedin
-														</div>
-													</a>
-												</li>
-												<li>
-													<a class="dribbble-link" target="_blank"
-														href="https://github.com/paramjeetdhiman">
-														<i id="tt4" class="zmdi zmdi-github"></i>
-														<div class="mdl-tooltip" data-mdl-for="tt4">
-															github
-														</div>
-													</a>
-												</li>
-												<li>
-													<a class="instagram-link" target="_blank"
-														href="https://www.instagram.com/paramjeetdhiman_/">
-														<i id="tt5" class="zmdi zmdi-instagram"></i>
-														<div class="mdl-tooltip" data-mdl-for="tt5">
-															instagram
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-md-7 col-xs-12">
-											<div class="info-wrap">
-												<h1>Paramjeet Dhiman</h1>
-												<h5 class="mt-20 font-black">Frontend Developer </h5>
-												<div class="mt-30">
-													<a id="download_cv"
-														class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-green font-white mr-10"
-														href="https://www.dropbox.com/s/g63m6lrnnqfnmij/myResume.pdf?dl=0"
-														target="_blank">download cv</a>
-													<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect bg-blue font-white"
-														href="#contact_sec" data-scroll>contact</a>
-												</div>
-											</div>
-											<ul class="profile-wrap mt-50">
-												<li>
-													<div class="profile-title">date of birth</div>
-													<div class="profile-desc">19-12-1997</div>
-												</li>
-
-												<li>
-													<div class="profile-title">email</div>
-													<div class="profile-desc">
-														paramjeetdhiman1997@gmail.com
-													</div>
-												</li>
-
-												<li>
-													<div class="profile-title">phone</div>
-													<div class="profile-desc">
-														+91 702-700-6363
-													</div>
-												</li>
-												<li>
-													<div class="profile-title">address</div>
-													<div class="profile-desc">
-														Jind, Haryana, India
-													</div>
-												</li>
-												<li>
-													<div class="profile-title">freelance</div>
-													<div class="profile-desc relative">Available
-														<i id="datepickopn"
-															class="zmdi zmdi-calendar-check font-green pl-5"></i>
-														<div id='datepicker1' class='datepicker'></div>
-													</div>
-
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<!--/About Sec-->
-
-					<!--Skills Sec-->
-					<section id="skills_sec" class="skills-sec sec-pad-top-sm">
-						<div class="row">
-							<h2 class="mb-30 text-center">Technical Skills</h2>
-							<div class="col-sm-6 mb-30">
-								<!--<h2 class="mb-30 text-center">technical skills</h2>-->
-								<div class="mdl-card mdl-shadow--2dp">
-									<div class="mb-30">
-										<span class="progress-cat">Frontend Development</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap orange-bar">
-													<span data-width="70"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">HTML5</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap blue-bar">
-													<span data-width="100"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">CSS3</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap green-bar">
-													<span data-width="100"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">JavaScript</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap yellow-bar">
-													<span data-width="90"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">jQuery</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap sky-bar">
-													<span data-width="90"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">bootstrap</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap orange-bar">
-													<span data-width="100"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-							<div class="col-sm-6 mb-30">
-								<!--<h2 class="mb-30">soft skills</h2>-->
-								<div class="mdl-card mdl-shadow--2dp">
-									<div class="mb-30">
-										<span class="progress-cat">Backend Development</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap orange-bar">
-													<span data-width="40"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">Angular</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap blue-bar">
-													<span data-width="70"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">Sass</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap green-bar">
-													<span data-width="80"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">Node.js</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap yellow-bar">
-													<span data-width="50"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">Express</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap sky-bar">
-													<span data-width="40"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">MongoDb</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap orange-bar">
-													<span data-width="60"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<h2 class="mb-30 text-center">Personal Skills</h2>
-							<div class="col-sm-6 mb-30">
-								<!--<h2 class="mb-30 text-center">technical skills</h2>-->
-								<div class="mdl-card mdl-shadow--2dp">
-									<div class="mb-30">
-										<span class="progress-cat">CREATIVE</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap blue-bar">
-													<span data-width="90"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">HARD WORKER</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap red-bar">
-													<span data-width="100"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">LEADERDHIP</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap sky-bar">
-													<span data-width="90"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-6 mb-30">
-								<!--<h2 class="mb-30">soft skills</h2>-->
-								<div class="mdl-card mdl-shadow--2dp">
-									<div class="mb-30">
-										<span class="progress-cat">TEAM PLAYER</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap blue-bar">
-													<span data-width="100"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat"> TIME MANAGEMENT</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap red-bar">
-													<span data-width="100"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="mb-30">
-										<span class="progress-cat">MOTIVATED</span>
-										<div class="progress-bar-graph">
-											<div class="progress-bar-wrap">
-												<div class="bar-wrap sky-bar">
-													<span data-width="100"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-
-					</section>
-					<!--/Skills Sec-->
-
-					<!--Profile Sec-->
-					<section id="profile_sec" class="profile-sec sec-pad-top-sm">
-						<h2 class="mb-30  text-center">what i do</h2>
-						<div class="row">
-							<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
-								<div class="mdl-card mdl-shadow--2dp">
-									<i class="zmdi zmdi-format-color-fill font-blue profile-icon"></i>
-									<h4 class="mb-15">Cloud Engineer </h4>
-									<p>A mobile first responsive template with material design.</p>
-
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
-								<div class="mdl-card mdl-shadow--2dp">
-									<i class="zmdi zmdi-code font-green profile-icon"></i>
-									<h4 class="mb-15">Frontend Developer</h4>
-									<p>Comes with light and dark options. Suitable for the universe.</p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
-								<div class="mdl-card mdl-shadow--2dp">
-									<i class="zmdi zmdi-code font-yellow profile-icon"></i>
-									<h4 class="mb-15">Backend Developer</h4>
-									<p>Extra ordinary setting pannel with lots of awesome features.</p>
-
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
-								<div class="mdl-card mdl-shadow--2dp">
-									<i class="zmdi zmdi-grain font-red profile-icon"></i>
-									<h4 class="mb-15">UI / UX DESIGN</h4>
-									<p>Easy customizable framework using bootstrap sass.</p>
-
-								</div>
-							</div>
-						</div>
-					</section>
-					<!--/Profile Sec-->
-
-					<!--Interest Sec-->
-					<section id="interest_sec" class="interest-sec sec-pad-top-sm">
-						<h2 class="mb-30">interests</h2>
-						<div class="row">
-							<div class="col-md-2 col-sm-4 col-xs-6 mb-30">
-								<div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
-									<i class="zmdi zmdi-radio"></i>
-									<span>music</span>
-								</div>
-							</div>
-							<div class="col-md-2 col-sm-4 col-xs-6 mb-30">
-								<div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
-									<i class="zmdi zmdi-search"></i>
-									<span>internet</span>
-								</div>
-							</div>
-							<div class="col-md-2 col-sm-4 col-xs-6 mb-30">
-								<div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
-									<i class="zmdi zmdi-movie"></i>
-									<span>movies</span>
-								</div>
-							</div>
-							<div class="col-md-2 col-sm-4 col-xs-6 mb-30">
-								<div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
-									<i class="zmdi zmdi-library"></i>
-									<span>reading</span>
-								</div>
-							</div>
-							<div class="col-md-2 col-sm-4 col-xs-6 mb-30">
-								<div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
-									<i class="zmdi zmdi-airplane"></i>
-									<span>traveling</span>
-								</div>
-							</div>
-							<div class="col-md-2 col-sm-4 col-xs-6 mb-30">
-								<div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
-									<i class="zmdi zmdi-code"></i>
-									<span>Coding</span>
-								</div>
-							</div>
-						</div>
-					</section>
-					<!--/Interest Sec-->
-
-					<!--Experience Sec-->
-					<section id="experience_sec" class="experience-sec sec-pad-top-sm">
-						<h2 class="mb-30 text-center">experience</h2>
-						<div class="timeline-wrap  overflow-hide mb-30">
-							<ul class="timeline">
-								<li>
-									<div class="timeline-badge">
-										<i class="zmdi zmdi-case font-blue"></i>
-									</div>
-									<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
-										<div class="timeline-heading">
-											<h4 class="mb-10">Frontend Developer</h4>
-											<span class="duration mb-5">November 2019 - Going on</span>
-											<span class="institution">Full Time </span>
-										</div>
-										<div class="timeline-body">
-		
-										</div>
-									</div>
-								</li>
-								<!-- 
+            <!--Experience Sec-->
+            <section id="experience_sec" class="experience-sec sec-pad-top-sm">
+              <h2 class="mb-30 text-center">experience</h2>
+              <div class="timeline-wrap overflow-hide mb-30">
+                <ul class="timeline">
+                  <li>
+                    <div class="timeline-badge">
+                      <i class="zmdi zmdi-case font-blue"></i>
+                    </div>
+                    <div
+                      class="
+                        timeline-panel
+                        mdl-card
+                        mdl-shadow--2dp
+                        pt-30
+                        pb-30
+                        border-top-blue
+                      "
+                    >
+                      <div class="timeline-heading">
+                        <h4 class="mb-10">Frontend Developer</h4>
+                        <span class="duration mb-5"
+                          >November 2019 - Going on</span
+                        >
+                        <span class="institution">Full Time </span>
+                      </div>
+                      <div class="timeline-body"></div>
+                    </div>
+                  </li>
+                  <!-- 
 								<li class="timeline-inverted">
 									<div class="timeline-badge">
 										<i class="zmdi zmdi-format-color-text font-green"></i>
@@ -669,222 +833,332 @@
 										</div>
 									</div>
 								</li> -->
-								<li class="clearfix no-float"></li>
-							</ul>
-						</div>
-					</section>
-					<!--/Experience Sec-->
+                  <li class="clearfix no-float"></li>
+                </ul>
+              </div>
+            </section>
+            <!--/Experience Sec-->
 
-					<!--Education Sec-->
-					<section id="education_sec" class="education-sec sec-pad-top-sm">
-						<h2 class="mb-30  text-center">education</h2>
-						<div class="timeline-wrap overflow-hide mb-30">
-							<ul class="timeline">
-								<li>
-									<div class="timeline-badge bg-blue no-icon"></div>
-									<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
-										<div class="timeline-heading">
+            <!--Education Sec-->
+            <section id="education_sec" class="education-sec sec-pad-top-sm">
+              <h2 class="mb-30 text-center">education</h2>
+              <div class="timeline-wrap overflow-hide mb-30">
+                <ul class="timeline">
+                  <li>
+                    <div class="timeline-badge bg-blue no-icon"></div>
+                    <div
+                      class="
+                        timeline-panel
+                        mdl-card
+                        mdl-shadow--2dp
+                        pt-30
+                        pb-30
+                        border-top-blue
+                      "
+                    >
+                      <div class="timeline-heading">
+                        <h4 class="mb-10">Front-End Development</h4>
+                        <span class="duration mb-5">Jan. 2019 - Present</span>
+                        <span class="institution"
+                          ><a href="https://frontendmasters.com" target="_blank"
+                            >Frontend Masters</a
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </li>
 
-											<h4 class="mb-10">Front-End Development</h4>
-											<span class="duration mb-5">Jan. 2019 - Present</span>
-											<span class="institution"><a href="https://frontendmasters.com"
-													target="_blank">Frontend
-													Masters</a></span>
-										</div>
+                  <li class="timeline-inverted">
+                    <div class="timeline-badge bg-red no-icon"></div>
+                    <div
+                      class="
+                        timeline-panel
+                        mdl-card
+                        mdl-shadow--2dp
+                        pt-30
+                        pb-30
+                        border-top-red
+                      "
+                    >
+                      <div class="timeline-heading">
+                        <h4 class="mb-10">Responsive Website Design</h4>
+                        <span class="duration mb-5">Oct. 2018 - Dec. 2018</span>
+                        <span class="institution"
+                          ><a href="https://freecodecamp.org" target="_blank"
+                            >Freecode camp</a
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </li>
 
-									</div>
-								</li>
+                  <li class="timeline-inverted">
+                    <div class="timeline-badge bg-green no-icon"></div>
+                    <div
+                      class="
+                        timeline-panel
+                        mdl-card
+                        mdl-shadow--2dp
+                        pt-30
+                        pb-30
+                        border-top-green
+                      "
+                    >
+                      <div class="timeline-heading">
+                        <h4 class="mb-10">XII (CBSE), Non-Medical</h4>
+                        <span class="duration mb-5">2015 - 2016</span>
+                        <span class="institution"
+                          >Moti Lal Nehru Public School, Jind</span
+                        >
+                      </div>
+                      <div class="timeline-body">
+                        <p class="mt-25">Percentage - 75.4%</p>
+                      </div>
+                    </div>
+                  </li>
 
-								<li class="timeline-inverted">
-									<div class="timeline-badge bg-red no-icon"></div>
-									<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-red">
-										<div class="timeline-heading">
-											<h4 class="mb-10">Responsive Website Design</h4>
-											<span class="duration mb-5">Oct. 2018 - Dec. 2018</span>
-											<span class="institution"><a href="https://freecodecamp.org"
-													target="_blank">Freecode camp</a></span>
-										</div>
-									</div>
-								</li>
+                  <li>
+                    <div class="timeline-badge bg-yellow no-icon"></div>
+                    <div
+                      class="
+                        timeline-panel
+                        mdl-card
+                        mdl-shadow--2dp
+                        pt-30
+                        pb-30
+                        border-top-yellow
+                      "
+                    >
+                      <div class="timeline-heading">
+                        <h4 class="mb-10">
+                          B.Tech Computer Science and Engineering
+                        </h4>
+                        <span class="duration mb-5">2016 - 2020</span>
+                        <span class="institution"
+                          >Lovely Professional University, Jalandhar</span
+                        >
+                      </div>
+                      <div class="timeline-body">
+                        <p class="mt-25">CGPA - 8</p>
+                      </div>
+                    </div>
+                  </li>
 
-								<li class="timeline-inverted">
-									<div class="timeline-badge bg-green no-icon"></div>
-									<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
-										<div class="timeline-heading">
-											<h4 class="mb-10">XII (CBSE), Non-Medical</h4>
-											<span class="duration mb-5">2015 - 2016</span>
-											<span class="institution">Moti Lal Nehru Public School, Jind</span>
-										</div>
-										<div class="timeline-body">
-											<p class="mt-25">Percentage - 75.4%</p>
-										</div>
-									</div>
-								</li>
+                  <li class="clearfix no-float"></li>
+                </ul>
+              </div>
+            </section>
+            <!--/Education Sec-->
 
-								<li>
-									<div class="timeline-badge bg-yellow no-icon"></div>
-									<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-yellow">
+            <!--Contact Sec-->
+            <section id="contact_sec" class="contact-sec sec-pad-top-sm">
+              <h2 class="mb-35 text-center">contact</h2>
+              <div class="row">
+                <div id="form_card_height" class="col-sm-7 mb-30">
+                  <div
+                    class="mdl-card mdl-shadow--2dp"
+                    data-ng-controller="ContactController"
+                  >
+                    <h4 class="mb-10 font-unsetcase">
+                      Hey
+                      <span data-ng-bind="formData.inputName||'There'"
+                        >There</span
+                      >, happy to hear from you.
+                    </h4>
+                    <form
+                      data-ng-submit="submit(contactform, $event)"
+                      name="contactform"
+                      method="post"
+                      class="form-horizontal mb-30"
+                      role="form"
+                    >
+                      <div
+                        class="form-group"
+                        data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }"
+                      >
+                        <div
+                          class="
+                            mdl-textfield mdl-js-textfield
+                            mdl-textfield--floating-label
+                          "
+                        >
+                          <input
+                            autocomplete="off"
+                            data-ng-model="formData.inputName"
+                            class="mdl-textfield__input"
+                            type="text"
+                            id="inputName"
+                            name="inputName"
+                            required
+                          />
+                          <label class="mdl-textfield__label" for="inputName"
+                            >name*</label
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="form-group"
+                        data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }"
+                      >
+                        <div
+                          class="
+                            mdl-textfield mdl-js-textfield
+                            mdl-textfield--floating-label
+                          "
+                        >
+                          <input
+                            autocomplete="off"
+                            data-ng-model="formData.inputEmail"
+                            class="mdl-textfield__input"
+                            type="email"
+                            id="inputEmail"
+                            name="inputEmail"
+                            required
+                          />
+                          <label class="mdl-textfield__label" for="inputEmail"
+                            >email*</label
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="form-group"
+                        data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }"
+                      >
+                        <div
+                          class="
+                            mdl-textfield mdl-js-textfield
+                            mdl-textfield--floating-label
+                          "
+                        >
+                          <textarea
+                            data-ng-model="formData.inputMessage"
+                            class="mdl-textfield__input"
+                            rows="3"
+                            id="inputMessage"
+                            name="inputMessage"
+                            required
+                          ></textarea>
+                          <label class="mdl-textfield__label" for="inputMessage"
+                            >message*</label
+                          >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="align-center">
+                          <button
+                            type="submit"
+                            class="
+                              mdl-button mdl-js-button
+                              mdl-button--raised
+                              mdl-js-ripple-effect
+                              bg-blue
+                              font-white
+                            "
+                            data-ng-disabled="submitButtonDisabled"
+                          >
+                            submit
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <p class="block result" data-ng-class="result">
+                      {{ resultMessage }}
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-5 mb-30">
+                  <div class="mdl-card mdl-shadow--2dp pa-0">
+                    <img class="img-fluid img-responsive" src="img/cont.jpg" />
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--/Contact Sec-->
 
-										<div class="timeline-heading">
-											<h4 class="mb-10">B.Tech Computer Science and Engineering</h4>
-											<span class="duration mb-5">2016 - 2020</span>
-											<span class="institution">Lovely Professional University, Jalandhar</span>
-										</div>
-										<div class="timeline-body">
-											<p class="mt-25">CGPA - 8</p>
-										</div>
-									</div>
-								</li>
+            <!--Footer Sec-->
+            <footer
+              class="footer-sec sec-pad-top-sm sec-pad-bottom text-center"
+            >
+              <h4>thank you for visiting.</h4>
+              <p class="mt-10">
+                All right reserved Paramjeet Dhiman &copy; 2021.
+              </p>
+              <ul class="social-icons mt-10">
+                <li>
+                  <a
+                    class="facebook-link"
+                    target="_blank"
+                    href="https://facebook.com/paramjeetdhiman1997"
+                  >
+                    <i id="tt6" class="zmdi zmdi-facebook"></i>
+                    <div class="mdl-tooltip" data-mdl-for="tt6">facebook</div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="twitter-link"
+                    target="_blank"
+                    href="https://twitter.com/paramdhiman_"
+                  >
+                    <i id="tt7" class="zmdi zmdi-twitter"></i>
+                    <div class="mdl-tooltip" data-mdl-for="tt7">twitter</div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="linkedin-link"
+                    target="_blank"
+                    href="https://linkedin.com/in/paramjeetdhiman"
+                  >
+                    <i id="tt8" class="zmdi zmdi-linkedin"></i>
+                    <div class="mdl-tooltip" data-mdl-for="tt8">linkedin</div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dribbble-link"
+                    target="_blank"
+                    href="https://github.com/paramjeetdhiman"
+                  >
+                    <i id="tt9" class="zmdi zmdi-github"></i>
+                    <div class="mdl-tooltip" data-mdl-for="tt9">github</div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="instagram-link"
+                    target="_blank"
+                    href="https://www.instagram.com/paramjeetdhiman_/"
+                  >
+                    <i id="tt10" class="zmdi zmdi-instagram"></i>
+                    <div class="mdl-tooltip" data-mdl-for="tt10">instagram</div>
+                  </a>
+                </li>
+              </ul>
+            </footer>
+            <!--Footer Sec-->
+          </div>
+        </div>
+        <!--/Main Content-->
+      </div>
+    </div>
+    <!--/Main Wrapper-->
 
-								<li class="clearfix no-float"></li>
-							</ul>
-						</div>
-					</section>
-					<!--/Education Sec-->
-
-
-					<!--Contact Sec-->
-					<section id="contact_sec" class="contact-sec sec-pad-top-sm">
-						<h2 class="mb-35  text-center">contact</h2>
-						<div class="row">
-							<div id="form_card_height" class="col-sm-7 mb-30">
-								<div class="mdl-card mdl-shadow--2dp" data-ng-controller="ContactController">
-									<h4 class="mb-10 font-unsetcase">Hey <span
-											data-ng-bind="formData.inputName||'There'">There</span>, happy to hear from
-										you.</h4>
-									<form data-ng-submit="submit(contactform, $event)" name="contactform" method="post"
-										class=" form-horizontal mb-30" role="form">
-										<div class="form-group"
-											data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-												<input autocomplete="off" data-ng-model="formData.inputName"
-													class="mdl-textfield__input" type="text" id="inputName"
-													name="inputName" required>
-												<label class="mdl-textfield__label" for="inputName">name*</label>
-											</div>
-										</div>
-										<div class="form-group"
-											data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-												<input autocomplete="off" data-ng-model="formData.inputEmail"
-													class="mdl-textfield__input" type="email" id="inputEmail"
-													name="inputEmail" required>
-												<label class="mdl-textfield__label" for="inputEmail">email*</label>
-											</div>
-										</div>
-										<div class="form-group"
-											data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-												<textarea data-ng-model="formData.inputMessage"
-													class="mdl-textfield__input" rows="3" id="inputMessage"
-													name="inputMessage" required></textarea>
-												<label class="mdl-textfield__label" for="inputMessage">message*</label>
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="align-center">
-												<button type="submit"
-													class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-blue font-white"
-													data-ng-disabled="submitButtonDisabled">
-													submit
-												</button>
-											</div>
-										</div>
-									</form>
-									<p class="block result" data-ng-class="result">{{ resultMessage }}</p>
-								</div>
-							</div>
-							<div class="col-sm-5 mb-30">
-								<div class="mdl-card mdl-shadow--2dp pa-0">
-									<img class="img-fluid img-responsive" src="img/cont.jpg">
-								</div>
-							</div>
-						</div>
-					</section>
-					<!--/Contact Sec-->
-
-					<!--Footer Sec-->
-					<footer class="footer-sec sec-pad-top-sm sec-pad-bottom text-center">
-						<h4>thank you for visiting.</h4>
-						<p class="mt-10">All right reserved Paramjeet Dhiman &copy; 2019.</p>
-						<ul class="social-icons mt-10">
-							<li>
-								<a class="facebook-link" target="_blank"
-									href="https://facebook.com/paramjeetdhiman1997">
-									<i id="tt6" class="zmdi zmdi-facebook"></i>
-									<div class="mdl-tooltip" data-mdl-for="tt6">
-										facebook
-									</div>
-								</a>
-							</li>
-							<li>
-								<a class="twitter-link" target="_blank" href="https://twitter.com/paramdhiman_">
-									<i id="tt7" class="zmdi zmdi-twitter"></i>
-									<div class="mdl-tooltip" data-mdl-for="tt7">
-										twitter
-									</div>
-								</a>
-							</li>
-							<li>
-								<a class="linkedin-link" target="_blank" href="https://linkedin.com/in/paramjeetdhiman">
-									<i id="tt8" class="zmdi zmdi-linkedin"></i>
-									<div class="mdl-tooltip" data-mdl-for="tt8">
-										linkedin
-									</div>
-								</a>
-							</li>
-							<li>
-								<a class="dribbble-link" target="_blank" href="https://github.com/paramjeetdhiman">
-									<i id="tt9" class="zmdi zmdi-github"></i>
-									<div class="mdl-tooltip" data-mdl-for="tt9">
-										github
-									</div>
-								</a>
-							</li>
-							<li>
-								<a class="instagram-link" target="_blank"
-									href="https://www.instagram.com/paramjeetdhiman_/">
-									<i id="tt10" class="zmdi zmdi-instagram"></i>
-									<div class="mdl-tooltip" data-mdl-for="tt10">
-										instagram
-									</div>
-								</a>
-							</li>
-						</ul>
-
-					</footer>
-					<!--Footer Sec-->
-				</div>
-			</div>
-			<!--/Main Content-->
-
-			<!--Setting Trigger-->
-			<button
-				class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-shadow--8dp bg-red setting-btn">
-				<i class="zmdi zmdi-settings"></i>
-			</button>
-			<!--/Setting Trigger-->
-
-		</div>
-	</div>
-	<!--/Main Wrapper-->
-
-	<!-- Scripts -->
-	<script src="js/jquery-1.12.4.min.js"></script>
-	<script src="js/angular.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/material.min.js"></script>
-	<script src="js/jQuery.appear.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/controllers.js"></script>
-	<script src="js/smooth-scroll.js"></script>
-	<script src="js/isotope.js"></script>
-	<script src="js/lightgallery-all.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/froogaloop2.min.js"></script>
-	<script src="js/jquery.slimscroll.js"></script>  
-	<script src="js/init.js"></script>
-</body>
-
+    <!-- Scripts -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/jQuery.appear.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/lightgallery-all.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/froogaloop2.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/init.js"></script>
+  </body>
 </html>
